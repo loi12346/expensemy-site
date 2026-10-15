@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ExpenseMY Tester Guide</title>
+<meta name="description" content="How to join the ExpenseMY test on Google Play, set the app up, and report problems.">
+<style>
+  :root {
+    --bg: #ffffff;
+    --text: #1d1f23;
+    --muted: #5b616b;
+    --accent: #0b6e4f;
+    --card: #f2f6f4;
+    --border: #d9e2dd;
+    --warn-bg: #fff6e5;
+    --warn-border: #f0d49a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121416;
+      --text: #e8eaed;
+      --muted: #a4abb4;
+      --accent: #5fd0a4;
+      --card: #1b2420;
+      --border: #2c3a33;
+      --warn-bg: #2a2416;
+      --warn-border: #5a4a22;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 1.9rem; line-height: 1.25; margin: 0 0 4px; }
+  h2 { font-size: 1.2rem; margin: 36px 0 8px; color: var(--accent); }
+  p, li { margin: 0 0 10px; }
+  ul, ol { padding-left: 1.3em; margin: 0 0 10px; }
+  .meta { color: var(--muted); margin-bottom: 24px; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px 20px;
+    margin: 12px 0;
+  }
+  .card ul, .card ol { margin: 0; }
+  .warn { background: var(--warn-bg); border-color: var(--warn-border); }
+  .note { color: var(--muted); font-size: 0.95rem; }
+  a { color: var(--accent); }
+  footer { margin-top: 48px; color: var(--muted); font-size: 0.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>ExpenseMY Tester Guide</h1>
+  <p class="meta">Thank you for helping test ExpenseMY before it launches on Google Play.</p>
+
+  <p>ExpenseMY records your spending automatically from the payment alerts your banking and e-wallet apps
+  already send you. Everything stays encrypted on your phone. This page explains how to join, set it up in a
+  few minutes, and tell us when something goes wrong.</p>
+
+  <div class="card">
+    <strong>The one thing we need most:</strong> please stay in the test and keep ExpenseMY installed for at
+    least <strong>14 days</strong>. Google only lets the app launch after enough testers have stayed in the test
+    for 14 days in a row.
+  </div>
+
+  <h2>1. Before you start</h2>
+  <ul>
+    <li>An Android phone with Android 10 or later.</li>
+    <li>A screen lock (PIN, pattern or password). ExpenseMY uses it to lock the app.</li>
+    <li>At least one of these apps, with payment notifications turned on: <strong>MAE, CIMB OCTO, Touch 'n Go
+      eWallet, Grab, Boost or Atome</strong>. Other banks are not supported yet. Without one of these apps you
+      can still look around with demo data (see section 5).</li>
+    <li>The Google account (Gmail) you use for the Play Store. Send it to Chai Chun so it can be added to the
+      tester list.</li>
+  </ul>
+
+  <h2>2. Join the test and install</h2>
+  <ol>
+    <li>Open the test link Chai Chun sends you, while signed in to the same Google account.</li>
+    <li>Tap <strong>Become a tester</strong>.</li>
+    <li>Tap the Google Play link on that page and install ExpenseMY. It can take a few minutes after joining
+      before the app appears.</li>
+    <li>Updates arrive through Google Play like any other app.</li>
+  </ol>
+  <p class="note">If you previously installed ExpenseMY from a file (APK), tell Chai Chun before installing from
+  Google Play.</p>
+
+  <h2>3. First-time setup (about 3 minutes)</h2>
+  <p>After you unlock ExpenseMY the first time, a <strong>Setup</strong> checklist opens. Tap
+  <strong>Continue setup</strong>. It takes you to each Android setting in turn and checks it again when you come
+  back.</p>
+  <ol>
+    <li><strong>Allow notification access.</strong> ExpenseMY explains what it reads, and you tap Agree. In Android
+      settings, switch ExpenseMY on. It only reads the apps you choose in the next step.</li>
+    <li><strong>Choose your bank &amp; wallet apps.</strong> The supported apps already on your phone are ticked
+      for you. Untick any you don't want recorded.</li>
+    <li><strong>Turn on recording alerts.</strong> Allow notifications so ExpenseMY can tell you when it recorded
+      something. You can send yourself a test alert.</li>
+    <li><strong>Let ExpenseMY run in the background.</strong> Set its battery setting to "Unrestricted" or "Don't
+      optimize". Otherwise Android may stop it and payments will be missed.</li>
+    <li><strong>Allow auto-start</strong> (Xiaomi, Redmi, POCO, OPPO, realme, OnePlus, vivo, Huawei and Honor only).
+      Turn on auto-start for ExpenseMY on the page that opens, then come back and confirm.</li>
+    <li><strong>Lock it in Recent apps</strong> (Xiaomi, Redmi and POCO only). Open Recent apps, long-press
+      ExpenseMY and choose the lock, so "Clear all" doesn't close it.</li>
+    <li><strong>Your legal name</strong> (optional). This is used only to recognise transfers to your own account.
+      You can skip it.</li>
+  </ol>
+  <p>Tap <strong>Finish setup</strong>. You should see <strong>Listening</strong>. You can reopen Setup at any time
+  from the top of Settings.</p>
+
+  <h2>4. Everyday use</h2>
+  <ul>
+    <li>Pay as usual. A "Recorded" alert appears with buttons to pick a category straight away.</li>
+    <li>Alerts ExpenseMY isn't sure about go to the <strong>Review</strong> tab. Check them now and then.</li>
+    <li>Open a transaction and tap <strong>Split</strong> to count only your share of a shared bill.</li>
+    <li>Add cash spending yourself with the <strong>Add</strong> button on the Transactions tab.</li>
+  </ul>
+
+  <h2>5. No supported app? Try demo data</h2>
+  <p>Open <strong>Settings &rarr; Try demo data</strong> to explore ExpenseMY with fictional records. A banner shows
+  while you are in demo mode, and <strong>Exit demo</strong> takes you back. Demo data never mixes with your real
+  records.</p>
+
+  <h2>6. Reporting a problem</h2>
+  <p>Message Chai Chun directly or email <a href="mailto:loichaichun@gmail.com">loichaichun@gmail.com</a>.
+  Please include:</p>
+  <ul>
+    <li>your phone brand and model;</li>
+    <li>what you expected and what happened instead;</li>
+    <li>roughly when it happened, and which app the payment was from;</li>
+    <li>a screenshot if it helps. Hide amounts or names you'd rather not share.</li>
+  </ul>
+  <div class="card warn">
+    <strong>About "Export diagnostics":</strong> Chai Chun may ask you for this file to fix a missed payment. It is
+    <strong>plain text</strong> and can contain your notification text and transactions. Send it only directly to
+    Chai Chun, and <strong>never post it in a group chat</strong>.
+  </div>
+
+  <h2>7. Good to know</h2>
+  <ul>
+    <li>Your records stay on your phone. Uninstalling ExpenseMY deletes them, so use
+      <strong>Settings &rarr; Backup &amp; Restore</strong> to save an encrypted backup first if you want to keep
+      them.</li>
+    <li>Battery and auto-start settings look different on every phone brand. If payments stop being recorded,
+      reopen Setup from Settings and check each item again.</li>
+    <li>Read the <a href="../privacy/">privacy policy</a>.</li>
+  </ul>
+
+  <footer>ExpenseMY &middot; Tester Guide</footer>
+</main>
+</body>
+</html>
