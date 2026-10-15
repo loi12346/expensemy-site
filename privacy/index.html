@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ExpenseMY Privacy Policy</title>
+<meta name="description" content="How ExpenseMY handles your notifications and spending records: everything stays encrypted on your phone.">
+<style>
+  :root {
+    --bg: #ffffff;
+    --text: #1d1f23;
+    --muted: #5b616b;
+    --accent: #0b6e4f;
+    --card: #f2f6f4;
+    --border: #d9e2dd;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121416;
+      --text: #e8eaed;
+      --muted: #a4abb4;
+      --accent: #5fd0a4;
+      --card: #1b2420;
+      --border: #2c3a33;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 1.9rem; line-height: 1.25; margin: 0 0 4px; }
+  h2 { font-size: 1.2rem; margin: 36px 0 8px; color: var(--accent); }
+  p, li { margin: 0 0 10px; }
+  ul { padding-left: 1.3em; margin: 0 0 10px; }
+  .meta { color: var(--muted); margin-bottom: 24px; }
+  .summary {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px 20px;
+  }
+  .summary ul { margin: 0; }
+  .summary li { margin-bottom: 6px; }
+  .note { color: var(--muted); font-size: 0.95rem; }
+  a { color: var(--accent); }
+  footer { margin-top: 48px; color: var(--muted); font-size: 0.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>ExpenseMY Privacy Policy</h1>
+  <p class="meta">Effective 15 October 2026</p>
+
+  <p>ExpenseMY is a personal expense tracker for Android, made by Chai Chun. It turns payment
+  alerts from your banking and e-wallet apps into spending records, and it works entirely on your phone.
+  This page explains what the app reads, what it keeps, and what (very little) ever leaves your phone.</p>
+
+  <div class="summary">
+    <ul>
+      <li><strong>No account and no sign-in.</strong></li>
+      <li><strong>Your records stay on your phone, encrypted.</strong> The developer never receives your
+        notifications, transactions or name.</li>
+      <li><strong>No analytics and no tracking.</strong> Your data is never sold or shared.</li>
+      <li><strong>You are in control.</strong> You choose which apps are read, and you can turn it off or delete
+        everything at any time.</li>
+    </ul>
+  </div>
+
+  <h2>1. What ExpenseMY reads</h2>
+  <ul>
+    <li><strong>Notifications from the apps you choose.</strong> With Android's Notification access, which you
+      grant and can revoke at any time, ExpenseMY reads notifications from the banking and e-wallet apps you
+      select in the app: currently MAE, CIMB OCTO, Touch 'n Go eWallet, Grab, Boost and Atome. ShopeePay and
+      Google Wallet can also be read, but only if you turn them on; they are off by default. These
+      notifications can contain amounts, merchant names, dates and partial account details.</li>
+    <li><strong>Notifications from all other apps are ignored</strong>. They are not stored or processed.</li>
+    <li><strong>What you enter yourself</strong>, such as manual transactions, categories, notes, splits and
+      rules. You can also enter your legal or account name. It is optional and used only to recognise transfers
+      to your own account.</li>
+  </ul>
+  <p class="note">ExpenseMY is an independent app. It is not affiliated with, endorsed by or connected to any
+  bank or e-wallet named on this page. It does not connect to your bank and never sees your banking password.</p>
+
+  <h2>2. Why it reads them</h2>
+  <p>Only to record your spending automatically, show you spending summaries, and put unclear alerts in a
+  Review list for you to check. It is not used for any other purpose.</p>
+
+  <h2>3. Where your data is kept and how it is protected</h2>
+  <ul>
+    <li>Your data is stored <strong>only on your phone</strong>, in an encrypted database (SQLCipher). Its key is
+      protected by the Android Keystore.</li>
+    <li>The data is <strong>excluded from Android and Google cloud backup and from phone-to-phone
+      transfer</strong>, so it is not copied anywhere automatically.</li>
+    <li>The app is locked with your phone's fingerprint, face or screen lock. Android handles this.
+      ExpenseMY never receives your fingerprint or face data.</li>
+    <li><strong>Notification log:</strong> by default ExpenseMY keeps the original text of captured
+      notifications from your chosen apps, up to the 5,000 most recent, so you can see what happened to each
+      one. In Settings &rarr; Privacy &amp; Security you can switch this to metadata only (no text) or off. You
+      can also clear the log at any time.</li>
+    <li>Alerts ExpenseMY shows, such as "Automatically recorded", hide amounts and merchants on the lock
+      screen.</li>
+  </ul>
+
+  <h2>4. What leaves your phone</h2>
+  <p><strong>Nothing is sent to the developer or to any server operated by the developer.</strong></p>
+  <ul>
+    <li><strong>Google Play version:</strong> it does not have Android's internet permission at all.</li>
+    <li><strong>Version downloaded from GitHub:</strong> this version checks for updates at most once a day
+      when you open the app, or when you tap Check for updates. It downloads public version information and
+      the app file from GitHub. These requests contain no data from the app. As with any web request, GitHub
+      can see your IP address and basic device information; see
+      <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub's
+      privacy statement</a>.</li>
+  </ul>
+  <p>Files leave the app only when you choose to export them:</p>
+  <ul>
+    <li><strong>Encrypted backup.</strong> It contains your transactions and rules, but not pending reviews, the
+      notification log or app settings. It is protected by a password you set and saved where you choose.</li>
+    <li><strong>Diagnostics export.</strong> This is a plain-text file and is <em>not encrypted</em>. It may
+      include notification text and transactions. It is created only when you tap Export and saved where you
+      choose. Share it only with someone you trust, for example the developer when reporting a problem.</li>
+  </ul>
+  <p>If you save or send these files to another service, such as Google Drive, email or WhatsApp, that
+  service's own privacy policy applies.</p>
+
+  <h2>5. Sharing</h2>
+  <p>We do not sell, rent or share your data with anyone. ExpenseMY contains no third-party analytics or
+  crash-reporting code.</p>
+
+  <h2>6. Your choices and deleting your data</h2>
+  <ul>
+    <li>Turn off Notification access for ExpenseMY in Android settings at any time.</li>
+    <li>Choose which apps are read in Settings &rarr; Listening apps.</li>
+    <li>Delete recorded transactions in Settings &rarr; Privacy &amp; Security &rarr; Clear recorded
+      transactions. Clear the notification log from Notification Logs.</li>
+    <li><strong>Uninstalling ExpenseMY deletes all of its data from your phone</strong>, including the
+      encryption key. It cannot be recovered unless you saved an encrypted backup.</li>
+  </ul>
+  <p>Because the developer holds none of your app data, there is nothing on our side to access, correct or
+  delete. Everything is on your phone and under your control.</p>
+
+  <h2>7. If you contact us or join testing</h2>
+  <p>If you email or message us, we receive your contact details and whatever you send. If you join a Google
+  Play test, we see the email address you were added with. We use this only to reply, run the test and fix
+  problems, and delete it when it is no longer needed. Google Play's handling of your account is covered by
+  <a href="https://policies.google.com/privacy">Google's privacy policy</a>.</p>
+
+  <h2>8. Children</h2>
+  <p>ExpenseMY is intended for adults and is not directed at children.</p>
+
+  <h2>9. Changes to this policy</h2>
+  <p>If this policy changes, we will update this page and its effective date. Significant changes will also
+  appear in the app's release notes.</p>
+
+  <h2>10. Contact</h2>
+  <p>Questions about this policy or your data: <a href="mailto:loichaichun@gmail.com">loichaichun@gmail.com</a></p>
+
+  <footer>ExpenseMY &middot; Privacy Policy &middot; Effective 15 October 2026</footer>
+</main>
+</body>
+</html>
